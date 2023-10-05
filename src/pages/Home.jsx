@@ -1,19 +1,34 @@
 import React from 'react'
-import '../css/home.css';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {
   return (
     <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/dsa">DSA</Link></li>
-        <li><Link to="/java">Java</Link></li>
-        <li><Link to="/react">ReactJs</Link></li>
-        <li><Link to="/spring">Spring</Link></li>
-        <li><Link to="/algorithms">Algorithm</Link></li>
-        <li style={{float:"right"}}><a class="active" href="#about">About</a></li>
-      </ul>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="container-fluid">
+          <ul className="navbar-nav mx-5">
+            <li className="nav-item">
+              <Link className="navbar-brand mx-5"  to="/">Home</Link>
+            </li>
+            <li  className="nav-item">
+              <Link className="navbar-brand mx-5" to="/dsa">DSA</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="navbar-brand mx-5" to="/java">Java</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="navbar-brand mx-5" to="/react">ReactJs</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="navbar-brand mx-5" to="/spring">Spring</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="navbar-brand mx-5" to="/algorithms">Algorithm</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   )
 }

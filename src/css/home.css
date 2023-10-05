@@ -10,7 +10,7 @@ ul {
     float: left;
   }
   
-  li a {
+  li  {
     display: block;
     color: white;
     text-align: center;
@@ -18,7 +18,7 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
+  li:hover:not(.active) {
     background-color: #111;
   }
   
