@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import myImage from "../images/simply-easy-learning.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Home() {
@@ -29,6 +30,7 @@ function Home() {
           </ul>
         </div>
       </nav>
+      <img src={myImage} alt='error'/>
     </div>
   )
 }
