@@ -1,4 +1,35 @@
-.dsa{
-  padding-left: 20px;
-  padding-top: 40px;
+.dsa {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.dsa a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+.dsa a:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .dsa {padding-top: 15px;}
+  .dsa a {font-size: 18px;}
+}
+
+.main {
+  margin: 35px;
+  margin-left: 205px; /* Same width as the sidebar + left position in px */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 35px 25px;
 }
