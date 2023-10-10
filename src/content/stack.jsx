@@ -1,5 +1,7 @@
 import React from 'react'
 import image from "../images/stack.jpg"
+import '../css/demo.css';
+
 function stack() {
   return (
     <div className='container'>
@@ -17,7 +19,12 @@ function stack() {
       <div align="center">
         <img src={image} alt='stack'/>
       </div>
-      
+      <br/>
+      <h2>Stack Demo</h2>
+      <br/>
+      <div class="stackDemo">
+        <input type="text" placeholder='Enter the item'/>
+      </div>
     </div>
   )
 }
