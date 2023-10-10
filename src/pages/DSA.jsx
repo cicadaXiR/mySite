@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import '../css/home.css';
-import { Link, Routes, Route } from "react-router-dom"
 import Stack from './../content/stack';
 import Queue from '../content/Queue';
 import Tree from './../content/tree';

@@ -19,8 +19,8 @@ function App() {
           <Route path="/algorithms" element={<Algorithms />} />
         </Routes>
         <div>
-            <DSA/>
-          </div>
+          <DSA />
+        </div>
       </BrowserRouter>
     </div>
   );
