@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import '../css/home.css';
 import Stack from './../content/stack';
 import Queue from '../content/Queue';
