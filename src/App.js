@@ -18,6 +18,9 @@ function App() {
           <Route path="/spring" element={<Spring />} />
           <Route path="/algorithms" element={<Algorithms />} />
         </Routes>
+        <div>
+            <DSA/>
+          </div>
       </BrowserRouter>
     </div>
   );
