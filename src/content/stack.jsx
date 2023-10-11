@@ -9,7 +9,7 @@ function Stack() {
 
   const pushItem = () => {
     if (input.trim() !== '') {
-      axios.post('http://localhost:8080/stack/push', { item: input })
+      axios.post('http://localhost:8080/stack/push', { value: input })
         .then(() => {
           setStack([...stack, input]);
           setInput('');
