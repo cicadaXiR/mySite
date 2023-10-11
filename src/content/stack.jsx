@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import image from "../images/stack.jpg"
 import '../css/demo.css';
+import axios from 'axios';
 
 function Stack() {
   const [stack, setStack] = useState([]);
@@ -8,8 +9,11 @@ function Stack() {
 
   const pushItem = () => {
     if (input.trim() !== '') {
-      setStack([...stack, input]);
-      setInput('');
+      axios.post('http://localhost:8080/stack/push', { item: input })
+        .then(() => {
+          setStack([...stack, input]);
+          setInput('');
+        });
     }
   };
 
