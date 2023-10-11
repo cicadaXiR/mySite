@@ -8,7 +8,7 @@ function Stack() {
 
   const pushItem = () => {
     if (input.trim() !== '') {
-      setStack([stack, input]);
+      setStack([...stack, input]);
       setInput('');
     }
   };
@@ -17,7 +17,7 @@ function Stack() {
     if (stack.length === 0) {
       return;
     }
-    const newStack = [stack];
+    const newStack = [...stack];
     newStack.pop();
     setStack(newStack);
   };
@@ -44,16 +44,20 @@ function Stack() {
         <input type="text" placeholder='Enter the item' value={input}
           onChange={(e) => setInput(e.target.value)} />
         &nbsp; &nbsp; &nbsp;
-        <button className='btn btn-success' onClick={() => pushItem(Math.random())}>Push</button>
+        <button className='btn btn-success' onClick={pushItem}>Push</button>
         &nbsp; &nbsp;
         <button className='btn btn-danger' onClick={popItem}>Pop</button>
         <div>
           <strong>Stack:</strong>
-          <ul>
-            {stack.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
+          <table class='table table-dark'>
+            <tbody>
+              {stack.map((item, index) => (
+                <tr class='col'>
+                  <td key={index}>{item}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
