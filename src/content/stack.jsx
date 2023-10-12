@@ -48,7 +48,7 @@ function Stack() {
       <br />
       <div className="stackDemo">
         <input type="text" placeholder='Enter the item' value={input}
-          onChange={(e) => setInput(e.target.value)} />
+          onChange={(e) => setInput(e.target.value)} required/>
         &nbsp; &nbsp; &nbsp;
         <button className='btn btn-success' onClick={pushItem}>Push</button>
         &nbsp; &nbsp;

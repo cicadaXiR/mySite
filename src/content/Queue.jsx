@@ -44,7 +44,7 @@ function Queue() {
       <br />
       <div className='queueDemo'>
         <input type="text" placeholder='Enter the item' value={input}
-          onChange={(e) => setInput(e.target.value)} />
+          onChange={(e) => setInput(e.target.value)} required/>
         &nbsp; &nbsp; &nbsp;
         <button className='btn btn-success' onClick={enQueue}>Enqueue</button>
         &nbsp; &nbsp;
