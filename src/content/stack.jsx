@@ -18,12 +18,14 @@ function Stack() {
   };
 
   const popItem = () => {
-    if (stack.length === 0) {
-      return;
-    }
-    const newStack = [...stack];
-    newStack.pop();
-    setStack(newStack);
+    axios.delete('http://localhost:8080/stack/pop').then(() => {
+      if (stack.length === 0) {
+        return;
+      }
+      const newStack = [...stack];
+      newStack.pop();
+      setStack(newStack);
+    });
   };
   return (
     <div className='container'>
