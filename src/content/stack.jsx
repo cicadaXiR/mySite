@@ -32,11 +32,11 @@ function Stack() {
       <h1>DSA - Stack</h1>
       <br />
       <br />
-      <p className='text-justify'>
+      <span className='text-justify'>
         <h2>Overview</h2>
         Stack is kind of data structure which allows operations on data only at one end. It allows access to the last inserted data only.
         Stack is also called LIFO (Last In First Out) data structure and Push and Pop operations are related in such a way that only last item pushed (added to stack) can be popped (removed from the stack)
-      </p>
+      </span>
       <br />
       <h2>Stack Representation</h2>
       <br />
@@ -46,7 +46,7 @@ function Stack() {
       <br />
       <h2>Stack Demo</h2>
       <br />
-      <div class="stackDemo">
+      <div className="stackDemo">
         <input type="text" placeholder='Enter the item' value={input}
           onChange={(e) => setInput(e.target.value)} />
         &nbsp; &nbsp; &nbsp;
@@ -55,10 +55,10 @@ function Stack() {
         <button className='btn btn-danger' onClick={popItem}>Pop</button>
         <div>
           <strong>Stack:</strong>
-          <table class='table table-dark'>
+          <table className='table table-dark'>
             <tbody>
               {stack.map((item, index) => (
-                <tr class='col'>
+                <tr className='col'>
                   <td key={index}>{item}</td>
                 </tr>
               ))}

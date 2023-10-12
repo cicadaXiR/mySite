@@ -26,13 +26,13 @@ function Queue() {
       <h1>DSA - Queue</h1>
       <br />
       <br />
-      <p className='text-justify'>
+      <span className='text-justify'>
         <h2>Overview</h2>
         Queue, like Stack, is also an abstract data structure.
         The thing that makes queue different from stack is that a queue is open at both its ends.
         Hence, it follows FIFO (First-In-First-Out) structure, i.e. the data item inserted first will also be accessed first.
         The data is inserted into the queue through one end and deleted from it using the other end.
-      </p>
+      </span>
       <br />
       <h2>Queue Representation</h2>
       <br />
@@ -51,10 +51,10 @@ function Queue() {
         <button className='btn btn-danger' onClick={deQueue}>Dequeue</button>
         <div>
           <strong>Queue:</strong>
-          <table class='table table-dark'>
+          <table className='table table-dark'>
             <tbody>
               {queue.map((item, index) => (
-                <tr class='col'>
+                <tr className='col'>
                   <td key={index}>{item}</td>
                 </tr>
               ))}
